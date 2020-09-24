@@ -9,10 +9,11 @@ def load_library(data)
 end
 
 def get_japanese_emoticon(data,emoticon)
-  load_library(data).find do
-
+  load_library(data).each do |key,value|
+    key.each do |language, emoji|
+      if key[language]= emoticon
+        return key[:japanese]
   end
-  binding.pry
 end
 
 def get_english_meaning
