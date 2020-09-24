@@ -14,7 +14,8 @@ def get_japanese_emoticon(data,emoticon)
       return value[:japanese]
     end
   elsif !value[:english] == emoticon
-    return "apology message"
+      return "apology message"
+    end
   end
 end
 
