@@ -8,8 +8,11 @@ def load_library(data)
   end
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(data,emoticon)
+  load_library(data).find do
+
+  end
+  binding.pry
 end
 
 def get_english_meaning
