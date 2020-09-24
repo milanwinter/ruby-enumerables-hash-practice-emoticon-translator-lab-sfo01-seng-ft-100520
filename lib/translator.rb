@@ -14,6 +14,7 @@ def get_japanese_emoticon(data,emoticon)
       if key[language]= emoticon
         return key[:japanese]
       end
+    end
   end
 end
 
