@@ -11,9 +11,12 @@ end
 def get_japanese_emoticon(data,emoticon)
   load_library(data).each do |key,value|
     if value[:english] == emoticon
+      binding.pry
       return value[:japanese]
   elsif !value[:english] == emoticon
+    binding.pry
       return "Sorry, that emoticon was not found"
+      
     end
   end
 end
