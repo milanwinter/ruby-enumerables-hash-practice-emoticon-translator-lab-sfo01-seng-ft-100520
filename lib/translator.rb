@@ -9,7 +9,7 @@ def load_library(data)
 end
 
 def get_japanese_emoticon(data,emoticon)
-  load_library(data).find do |key,value|
+  load_library(data).each do |key,value|
     if value[:english] == emoticon
       return value[:japanese]
     else
