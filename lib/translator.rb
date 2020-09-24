@@ -19,6 +19,7 @@ end
 def get_english_meaning(data,emoticon)
   load_library(data).each do |meaning,language|
     if language[:japanese] == emoticon
-      return Meaning
+      return meaning
+    end
   end
 end
