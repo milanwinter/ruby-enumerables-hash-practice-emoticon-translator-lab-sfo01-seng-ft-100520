@@ -21,6 +21,6 @@ def get_english_meaning(data,emoticon)
     if language[:japanese] == emoticon
       return meaning
     end
-    return "Sorry, that emoticon was not found"
   end
+  return "Sorry, that emoticon was not found"
 end
