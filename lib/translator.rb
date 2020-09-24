@@ -1,7 +1,11 @@
-# require modules here
+require "yaml"
+require 'pry'
 
-def load_library
-  # code goes here
+def load_library(data)
+  emoticons = YAML.load_file(data)
+  emoticons.each do |key,value|
+    emoticons[key] = {:english => value[0],:japanese => value[1]}
+  end
 end
 
 def get_japanese_emoticon
