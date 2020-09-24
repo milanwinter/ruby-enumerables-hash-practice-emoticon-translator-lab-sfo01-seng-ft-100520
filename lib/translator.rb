@@ -13,7 +13,7 @@ def get_japanese_emoticon(data,emoticon)
     if value[:english] == emoticon
       return value[:japanese]
   elsif !value[:english] == emoticon
-      p "Sorry, that emoticon was not found"
+      return "Sorry, that emoticon was not found"
     end
   end
 end
