@@ -13,6 +13,7 @@ def get_japanese_emoticon(data,emoticon)
     key.each do |language, emoji|
       if key[language]= emoticon
         return key[:japanese]
+      end
   end
 end
 
