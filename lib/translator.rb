@@ -10,6 +10,10 @@ end
 
 def get_japanese_emoticon(data,emoticon)
   load_library(data).each do |key,value|
+    if condition
+      
+    end
+    binding.pry
   end
 end
 
