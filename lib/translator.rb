@@ -10,11 +10,6 @@ end
 
 def get_japanese_emoticon(data,emoticon)
   load_library(data).each do |key,value|
-    key.each do |language, emoji|
-      if key[language]= emoticon
-        return key[:japanese]
-      end
-    end
   end
 end
 
