@@ -12,7 +12,6 @@ def get_japanese_emoticon(data,emoticon)
   load_library(data).each do |key,value|
     if value[:english] == emoticon
       return value[:japanese]
-    end
   elsif !value[:english] == emoticon
       return "apology message"
     end
